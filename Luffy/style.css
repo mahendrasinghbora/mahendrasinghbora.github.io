@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&family=Alegreya:wght@400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1d2124;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.nav-bar > li {
+    float: left;
+}
+
+.nav-bar > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 50px;
+    text-decoration: none;
+}
+
+.current {
+    background-color: darkgray;
+}
+
+.nav-bar > li a:hover:not(.current) {
+    background-color: gray;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+/* Slideshow Animation */
+@keyframes slideshow {
+    50% {
+        opacity: 0;
+    }
+}
+
+#slideshow {
+    display: flex;
+    justify-content: center;
+}
+
+#slideshow img {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+}
+
+#slideshow .top {
+    animation: slideshow 3s infinite;
+}
+
+.biography {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+li {
+    font-size: 20px;
+}
